@@ -1,4 +1,5 @@
 import streamlit as st
+from resources.AboutMe import *
 
 st.set_page_config(
     layout='centered',
@@ -15,6 +16,11 @@ with bio:
     st.write("Throughout my academic and professional journey, I've cultivated a strong foundation in software engineering. This background has equipped me with a solid understanding of how to develop robust applications. However, my passion for learning and tackling new challenges has led me to cybersecurity, where I'm eager to learn how to create secure systems and defend against threats.")
     st.write("Although I'm still figuring out what field of cybersecurity I'd like to focus on, I'm particularly interested in a DevSecOps role, which I believe perfectly combines my software development skills with the security skills I'm acquiring. This role aligns with my goal of integrating security practices into the development process to build resilient and secure applications.")
     st.write("In my free time, I enjoy playing volleyball, spending time with friends and family, cooking and trying new foods, and in general just seeking new thrills in life. Oh, and I'm also obsessed with the majestic Texas-based gas staton chain that is known as Buc-ee's.")
+    volleyball, bucees = st.columns(2)
+    with volleyball:
+        st.image('resources/AboutMe/VolleyballPicture.JPEG')
+    with bucees:
+        st.image('resources/AboutMe/BuceesPicture.JPEG')
 
 with experience:
     st.header("Experience")
