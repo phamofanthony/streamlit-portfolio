@@ -8,19 +8,17 @@ st.set_page_config(
 
 st.title("Anthony Pham's Portfolio")
 
-intro, experience, skills_certificates, education_awards, resume = st.tabs(['Intro', 'Experience', 'Skills/Certificates', 'Education/Awards', 'Resume'])
+intro, experience, skills_certificates, education_awards, resume, hobbies = st.tabs(['Intro', 'Experience', 'Skills/Certificates', 'Education/Awards', 'Resume', 'Hobbies'])
 
 with intro:
-    st.subheader("Howdy, and welcome to my portfolio! Feel free to learn about me from the tabs above and view my projects on the tabs to the left!")
-    st.write("I am a former software engineer with a deep passion for learning and problem-solving. I am currently pursuing my masters at the University of Arkansas, focusing on cybersecurity.")
-    st.write("Throughout my academic and professional journey, I've cultivated a strong foundation in software engineering. This background has equipped me with a solid understanding of how to develop robust applications. However, my passion for learning and tackling new challenges has led me to cybersecurity, where I'm eager to learn how to create secure systems and defend against threats.")
-    st.write("Although I'm still figuring out what field of cybersecurity I'd like to focus on, I'm particularly interested in a DevSecOps role, which I believe perfectly combines my software development skills with the security skills I'm acquiring. This role aligns with my goal of integrating security practices into the development process to build resilient and secure applications.")
-    st.write("In my free time, I enjoy playing volleyball, spending time with friends and family, cooking and trying new foods, and in general just seeking new thrills in life. Oh, and I'm also obsessed with the majestic Texas-based gas staton chain that is known as Buc-ee's.")
-    volleyball_pic, bucees_pic = st.columns(2)
-    with volleyball_pic:
-        st.image('resources/AboutMe/VolleyballPicture.JPEG')
-    with bucees_pic:
-        st.image('resources/AboutMe/BuceesPicture.JPEG')
+    st.subheader("Howdy, welcome to my portfolio! Find out more about me from the tabs above and view my projects on the tabs to the left!")
+    text, image = st.columns(spec=2, gap='small')
+    with text:
+        st.write("I am a former software engineer with a deep passion for learning and problem-solving. I am currently pursuing my masters at the University of Arkansas, focusing on cybersecurity.")
+        st.write("Throughout my academic and professional journey, I've cultivated a strong foundation in software engineering. This background has equipped me with a solid understanding of how to develop robust applications. However, my passion for learning and tackling new challenges has led me to cybersecurity, where I'm eager to learn how to create secure systems and defend against threats.")
+        st.write("Although I'm still figuring out what field of cybersecurity I'd like to focus on, I'm particularly interested in a DevSecOps role, which I believe perfectly combines my software development skills with the security skills I'm acquiring. This role aligns with my goal of integrating security practices into the development process to build resilient and secure applications.")
+    with image:
+        st.image('resources/AboutMe/SelfPicture.jpg')
 
 with experience:
     st.header("Experience")
@@ -72,3 +70,14 @@ with education_awards:
 
 with resume:
     st.image('resources/AboutMe/Resume.jpg')
+
+with hobbies:
+    st.write("In my free time, I enjoy playing volleyball, spending time with friends and family, cooking and trying new foods, and in general just seeking new thrills in life. With life being so short, I'm determined to make the most of it!")
+    st.write("I'm also active in the UVSA South space, a non-profit that unites all the Vietnamese Student Associations (VSA's) in Arkansas, Oklahoma, and Texas. Welcoming people of every background and ethnicity, UVSA South is geared towards empowering the next generation of leaders with the skills they need to succeed in their careers. In this space, I've staffed for several conferences that pull in 200+ attendees and currently, I am the logistics captain for Camp Legacy 9.")
+    st.write("Oh, I'm also obsessed with the majestic Texas-based gas staton chain called Buc-ee's.")
+    volleyball_pic, bucees_pic = st.columns(2)
+    with volleyball_pic:
+        st.image('resources/AboutMe/VolleyballPicture.JPEG')
+    with bucees_pic:
+        st.image('resources/AboutMe/BuceesPicture.JPEG')
+    st.image('resources/AboutMe/SummitPicture.jpg')
