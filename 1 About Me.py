@@ -27,7 +27,7 @@ with experience:
     st.write("On the product development team, I worked primarily on developing new business intelligence metrics for users in MicroStrategy, updating our backend services to be more robust, as well as helping maintain the operations of our ETL proccess that ran on a daily basis. On this team, one of my largest projects were to write a script to synchronize our dozens of customer schemas in the database to match table and view DDL's. ")
     st.write("On our ShelfIQ team, I worked on adding additional functionality to the product by creating new \"actions\" which are scripts that users can use to automate their planogram creation process. I also helped out in bugfixing for existing actions.")
     st.write("On the operations team, I worked directly with customer tickets through a CRM. I handled customer issues ranging from failing reports in MicroStrategy to data issues in our database and ETL process. On top of fixing their issues, I also facilitated communications back to the customer.")
-    st.write("My last team was the data engineering team, where I worked on expanding the ETL processes, pulling in new data feeds and adding connectors to new retailers. Some of my largest projects were creating two new connectors, a Slack-bot that periodically sent updates on the loading process throughout the day to a team-chat, and a Streamlit page that allowed us to quickly analyze SLA times for customers through querying the database.")
+    st.write("Lastly, on the data engineering team, where I worked on expanding the ETL processes, pulling in new data feeds and adding connectors to new retailers. Some of my largest projects were creating two new connectors, a Slack-bot that periodically sent updates on the loading process throughout the day to a team-chat, and a Streamlit page that allowed us to quickly analyze SLA times for customers through querying the database.")
     st.markdown('#')
 
 with skills_certificates:
@@ -50,7 +50,7 @@ with education_awards:
     st.write("Expected May 2026")
     st.subheader("University of Arkansas - Undergraduate Degree")
     st.write("B.S. in Computer Science w/ Minor in Mathematics")
-    st.write("Graduated May 2024 w/ a 4.0 GPA")
+    st.write("Graduated May 2024 with a 4.0 GPA")
     st.header("Awards")
     st.subheader("Cybercorps Scholarship for Service ")
     st.write("Award for high-achieving computer science students amounting to full tuition coverage, a \$37,000 annual stipend, and a \$6,000 stipend for professional development uses")
