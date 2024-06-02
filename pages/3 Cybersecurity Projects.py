@@ -8,4 +8,4 @@ st.set_page_config(
 
 st.title("Cybersecurity Projects")
 
-st.write("None yet.. but I'm planning to create keyloggers, packet sniffers, malware, and more!")
+st.write("None yet... but I'm planning to create keyloggers, packet sniffers, malware, and more!")
