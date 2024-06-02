@@ -6,6 +6,7 @@ st.set_page_config(
     page_icon="👋"
 )
 
-st.title("Cybersecurity Projects")
-
-st.write("None yet... but I'm planning to create keyloggers, packet sniffers, malware, and more!")
+st.markdown("""
+    ## Cybersecurity Projects
+    \n None yet... but I'm planning to create keyloggers, packet sniffers, malware, and more!
+    """)
