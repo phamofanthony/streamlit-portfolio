@@ -16,7 +16,7 @@ with intro:
     text, image = st.columns(spec=2, gap='small')
     with text:
         st.markdown("""
-            I am a former software engineer with a deep passion for learning and problem-solving. I am currently pursuing my masters at the University of Arkansas, focusing on cybersecurity.
+            I am a former software/data engineer with a deep passion for learning and problem-solving. I am currently pursuing my masters at the University of Arkansas, focusing on cybersecurity.
             \n Throughout my academic and professional journey, I've cultivated a strong foundation in software engineering. This background has equipped me with a solid understanding of how to develop robust applications. However, my passion for learning and tackling new challenges has led me to cybersecurity, where I'm eager to learn how to create secure systems and defend against threats.
             \n Although I'm still figuring out what field of cybersecurity I'd like to focus on, I'm particularly interested in a DevSecOps role, which I believe perfectly combines my software development skills with the security skills I'm acquiring. This role aligns with my goal of integrating security practices into the development process to build resilient and secure applications.
             """)
@@ -54,11 +54,11 @@ with education_awards:
         \n B.S. in Computer Science w/ Minor in Mathematics
         \n Graduated May 2024 with a 4.0 GPA
         \n ## Awards
-        \n ### Cybercorps Scholarship for Service 
+        \n ### CyberCorps Scholarship for Service 
         \n Award for high-achieving computer science students amounting to full tuition coverage, a \$37,000 annual stipend, and a \$6,000 stipend for professional development uses
         \n Awarded 2024
         \n ### Outstanding Computer Science Senior
-        \n Award given to one student per department each year, symbolizing excellence in academics, research, industry experience, and beyond 
+        \n Award given to one student per major each year, symbolizing excellence in academics, research, industry experience, and beyond 
         \n Awarded 2024
         \n ### First-Ranked Senior Scholar
         \n Award given to students who achieve a 4.0 GPA in their undergraduate studies
@@ -73,6 +73,9 @@ with education_awards:
 
 with resume:
     st.markdown("## Resume")
+    with open("resources/AboutMe/Resume.pdf", "rb") as pdf_file:
+        pdf_bytes = pdf_file.read()
+    st.download_button(label="Download Resume", data=pdf_bytes, file_name="Anthony Pham Resume.pdf", mime="application/octet-stream")
     st.image('resources/AboutMe/Resume.jpg')
 
 with hobbies:
