@@ -8,7 +8,7 @@ st.set_page_config(
 
 st.markdown("## Software Engineering Projects")
 
-capstone_proj, pacman, foodmap, navigation, bridge_crossing = st.tabs(['Capstone Matching', 'AI Pacman', 'FoodMap', 'Campus Navigation', 'Bridge Crossing Simulation'])
+capstone_proj, pacman, foodmap, navigation, bridge_crossing = st.tabs(['Capstone Matching', 'AI Pacman', 'Food Map', 'Campus Navigation', 'Bridge Crossing Simulation'])
 
 with capstone_proj:
     st.video('resources/SWEProjects/capstone.mp4')
