@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="👋"
 )
 
-st.title("Anthony Pham's SUPER TEST Portfolio")
+st.title("Anthony Pham's Portfolio")
 st.markdown("[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/phamofanthony) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/phamofanthony/) [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:phamofanthony@gmail.com)")
 
 intro, experience, skills_certificates, education_awards, resume, hobbies = st.tabs(['Intro', 'Experience', 'Skills/Certificates', 'Education/Awards', 'Resume', 'Hobbies'])
@@ -39,7 +39,7 @@ with skills_certificates:
         \n **Front-End Development:** Telerik, Blazor, ReactJS, 
         \n **Back-End Development:** Django, .NET, NodeJS, SQL S
         \n **Languages:** Python, C#, C++, C, Java, Kotlin, Java
-        \n **Tools:** Azure, Airflow, Git, Visual Studio, DbVisu
+        \n **Tools:** Git, Azure, Docker, Airflow, Postman, Fiddler Everywhere, Visual Studio, DbVisualizer, Microsoft Office, MicroStrategy
         \n ### Certificates
         \n Currently studying for Comptia Network+
         """)
