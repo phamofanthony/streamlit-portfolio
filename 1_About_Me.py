@@ -76,7 +76,8 @@ with resume:
     with open("resources/AboutMe/Resume.pdf", "rb") as pdf_file:
         pdf_bytes = pdf_file.read()
     st.download_button(label="Download Resume", data=pdf_bytes, file_name="Anthony Pham Resume.pdf", mime="application/octet-stream")
-    st.image('resources/AboutMe/Resume.jpg')
+    st.image('resources/AboutMe/ResumePage1.jpg')
+    st.image('resources/AboutMe/ResumePage2.jpg')
 
 with hobbies:
     st.markdown("""
